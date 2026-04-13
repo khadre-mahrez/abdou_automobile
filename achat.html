@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achat Vehicule - Abdou Automobile</title>
+    <meta name="description" content="Finalisez votre demande d'achat de vehicule premium avec Abdou Automobile.">
+    <link rel="stylesheet" href="abdou.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="purchase-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="monsite.html" class="logo">
+                <img src="images/logo-aa.svg" alt="Logo Abdou Auto">
+                <span class="logo-text">
+                    <strong>Abdou Auto</strong>
+                    <small>Solutions Automobiles &amp; Prestige</small>
+                </span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="monsite.html#home">Accueil</a></li>
+                <li><a href="monsite.html#voitures">Vehicules</a></li>
+                <li><a href="monsite.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="purchase-shell">
+        <section class="purchase-hero">
+            <p class="purchase-kicker">Demande d'achat premium</p>
+            <h1>Finalisez votre achat en quelques etapes</h1>
+            <p>Nous preparons votre dossier, confirmons la disponibilite du vehicule et organisons la visite ou la livraison avec un conseiller dedie.</p>
+        </section>
+
+        <section class="purchase-layout">
+            <aside class="purchase-summary">
+                <div class="purchase-vehicle">
+                    <img id="purchase-image" src="" alt="Vehicule selectionne">
+                    <div>
+                        <p class="summary-label">Vehicule selectionne</p>
+                        <h2 id="purchase-title">Vehicule premium</h2>
+                        <p id="purchase-price" class="purchase-price">Prix sur demande</p>
+                    </div>
+                </div>
+
+                <div class="purchase-card">
+                    <h3>Caracteristiques</h3>
+                    <div id="purchase-specs" class="spec-list"></div>
+                </div>
+
+                <div class="purchase-card">
+                    <h3>Comment l'achat se passe</h3>
+                    <ol class="process-list">
+                        <li>Vous envoyez votre demande avec vos coordonnees et votre budget.</li>
+                        <li>Un conseiller confirme la disponibilite et vous contacte rapidement.</li>
+                        <li>Nous preparons la visite, la reservation et le dossier de paiement.</li>
+                        <li>Vous validez le vehicule puis nous finalisons la livraison ou le retrait.</li>
+                    </ol>
+                </div>
+            </aside>
+
+            <section class="purchase-form-panel">
+                <div class="purchase-card">
+                    <div class="purchase-form-header">
+                        <p class="purchase-kicker">Dossier acheteur</p>
+                        <h3>Informations acheteur</h3>
+                        <p>Renseignez vos informations pour que notre equipe prepare la reservation, confirme la disponibilite et vous accompagne jusqu'a la finalisation.</p>
+                    </div>
+                    <form class="purchase-form">
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>01</span>
+                                <div>
+                                    <h4>Identite et coordination</h4>
+                                    <p>Ces informations permettent a un conseiller de vous recontacter rapidement.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Nom complet</span>
+                                    <input type="text" name="nom" placeholder="Ex: Abdou Diop" required>
+                                </label>
+                                <label class="field">
+                                    <span>Telephone</span>
+                                    <input type="tel" name="telephone" placeholder="+221 XX XXX XX XX" required>
+                                </label>
+                                <label class="field">
+                                    <span>Email</span>
+                                    <input type="email" name="email" placeholder="vous@email.com" required>
+                                </label>
+                                <label class="field">
+                                    <span>Ville</span>
+                                    <input type="text" name="ville" placeholder="Ex: Dakar">
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>02</span>
+                                <div>
+                                    <h4>Conditions d'achat</h4>
+                                    <p>Precisez votre cadre d'achat afin que nous puissions preparer une proposition claire, serieuse et adaptee a votre projet.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Mode de contact prefere</span>
+                                    <select name="mode_contact" required>
+                                        <option value="">Selectionnez</option>
+                                        <option value="telephone">Telephone</option>
+                                        <option value="whatsapp">WhatsApp</option>
+                                        <option value="email">Email</option>
+                                    </select>
+                                </label>
+                                <label class="field">
+                                    <span>Mode d'achat souhaite</span>
+                                    <select name="mode_achat" required>
+                                        <option value="">Selectionnez</option>
+                                        <option value="comptant">Paiement comptant</option>
+                                        <option value="financement">Financement</option>
+                                        <option value="reserve">Reservation d'abord</option>
+                                    </select>
+                                </label>
+                                <label class="field">
+                                    <span>Budget estime</span>
+                                    <input type="text" name="budget" placeholder="Ex: 75 000 000 FCFA">
+                                </label>
+                                <label class="field">
+                                    <span>Delai souhaite</span>
+                                    <select name="delai">
+                                        <option value="">Selectionnez</option>
+                                        <option value="immediat">Immediat</option>
+                                        <option value="7-jours">Sous 7 jours</option>
+                                        <option value="30-jours">Sous 30 jours</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>03</span>
+                                <div>
+                                    <h4>Livraison et remarques</h4>
+                                    <p>Indiquez vos preferences de remise ainsi que toute precision utile pour organiser la suite dans les meilleures conditions.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Preference de remise</span>
+                                    <select name="remise">
+                                        <option value="">Selectionnez</option>
+                                        <option value="showroom">Retrait au showroom</option>
+                                        <option value="livraison-dakar">Livraison a Dakar</option>
+                                        <option value="livraison-personnalisee">Livraison personnalisee</option>
+                                    </select>
+                                </label>
+                                <label class="field full-width">
+                                    <span>Message</span>
+                                    <textarea name="message" rows="6" placeholder="Precisez votre besoin: visite, reprise, livraison, documents, disponibilite..."></textarea>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section compact-section">
+                            <label class="consent-line">
+                                <input type="checkbox" name="validation" required>
+                                <span>Je confirme vouloir etre contacte par Abdou Automobile pour finaliser cette demande d'achat.</span>
+                            </label>
+                        </section>
+
+                        <div class="purchase-actions">
+                            <button type="submit">Envoyer ma demande d'achat</button>
+                            <p>Validation du dossier sous reserve de disponibilite du vehicule et confirmation par un conseiller.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="purchase-card confirmation-card" id="purchase-confirmation" hidden>
+                    <h3>Demande enregistree</h3>
+                    <p id="confirmation-message"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

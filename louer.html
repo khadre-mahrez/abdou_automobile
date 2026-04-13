@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Vehicule - Abdou Automobile</title>
+    <meta name="description" content="Finalisez votre demande de location de vehicule premium avec Abdou Automobile.">
+    <link rel="stylesheet" href="abdou.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="purchase-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="monsite.html" class="logo">
+                <img src="images/logo-aa.svg" alt="Logo Abdou Auto">
+                <span class="logo-text">
+                    <strong>Abdou Auto</strong>
+                    <small>Solutions Automobiles &amp; Prestige</small>
+                </span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="monsite.html#home">Accueil</a></li>
+                <li><a href="monsite.html#voitures">Vehicules</a></li>
+                <li><a href="monsite.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="purchase-shell">
+        <section class="purchase-hero">
+            <p class="purchase-kicker">Demande de location premium</p>
+            <h1>Organisez votre location en toute simplicite</h1>
+            <p>Nous validons les disponibilites, la duree, les conditions de remise et les options de service pour vous proposer une location claire et professionnelle.</p>
+        </section>
+
+        <section class="purchase-layout">
+            <aside class="purchase-summary">
+                <div class="purchase-vehicle">
+                    <img id="rental-image" src="" alt="Vehicule selectionne pour location">
+                    <div>
+                        <p class="summary-label">Vehicule selectionne</p>
+                        <h2 id="rental-title">Vehicule premium</h2>
+                        <p id="rental-price" class="purchase-price">Tarif sur demande</p>
+                    </div>
+                </div>
+
+                <div class="purchase-card">
+                    <h3>Tarifs de location</h3>
+                    <div id="rental-specs" class="spec-list"></div>
+                </div>
+
+                <div class="purchase-card">
+                    <h3>Comment la location se passe</h3>
+                    <ol class="process-list">
+                        <li>Vous choisissez le vehicule, la duree et la date souhaitee.</li>
+                        <li>Nous confirmons la disponibilite et les conditions de location.</li>
+                        <li>Un conseiller valide la remise, la caution et les options choisies.</li>
+                        <li>Le vehicule est prepare pour retrait ou livraison selon votre preference.</li>
+                    </ol>
+                </div>
+            </aside>
+
+            <section class="purchase-form-panel">
+                <div class="purchase-card">
+                    <div class="purchase-form-header">
+                        <p class="purchase-kicker">Dossier location</p>
+                        <h3>Informations locataire</h3>
+                        <p>Remplissez votre demande pour recevoir une proposition de location adaptee a vos dates, votre usage et vos preferences de service.</p>
+                    </div>
+                    <form class="rental-form purchase-form">
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>01</span>
+                                <div>
+                                    <h4>Identite et coordination</h4>
+                                    <p>Ces informations permettent a notre equipe de confirmer votre location rapidement.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Nom complet</span>
+                                    <input type="text" name="nom" placeholder="Ex: Abdou Diop" required>
+                                </label>
+                                <label class="field">
+                                    <span>Telephone</span>
+                                    <input type="tel" name="telephone" placeholder="+221 XX XXX XX XX" required>
+                                </label>
+                                <label class="field">
+                                    <span>Email</span>
+                                    <input type="email" name="email" placeholder="vous@email.com" required>
+                                </label>
+                                <label class="field">
+                                    <span>Ville</span>
+                                    <input type="text" name="ville" placeholder="Ex: Dakar">
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>02</span>
+                                <div>
+                                    <h4>Conditions de location</h4>
+                                    <p>Precisez les dates, la duree et les options utiles pour etablir votre offre de location.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Date de debut</span>
+                                    <input type="date" name="date_debut" required>
+                                </label>
+                                <label class="field">
+                                    <span>Date de fin</span>
+                                    <input type="date" name="date_fin" required>
+                                </label>
+                                <label class="field">
+                                    <span>Mode de contact prefere</span>
+                                    <select name="mode_contact" required>
+                                        <option value="">Selectionnez</option>
+                                        <option value="telephone">Telephone</option>
+                                        <option value="whatsapp">WhatsApp</option>
+                                        <option value="email">Email</option>
+                                    </select>
+                                </label>
+                                <label class="field">
+                                    <span>Usage principal</span>
+                                    <select name="usage" required>
+                                        <option value="">Selectionnez</option>
+                                        <option value="personnel">Usage personnel</option>
+                                        <option value="affaires">Deplacement d'affaires</option>
+                                        <option value="evenement">Evenement</option>
+                                        <option value="transfert">Transfert aeroport</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section">
+                            <div class="section-heading">
+                                <span>03</span>
+                                <div>
+                                    <h4>Remise et remarques</h4>
+                                    <p>Ajoutez vos preferences de remise, chauffeur et toute precision utile pour preparer votre location.</p>
+                                </div>
+                            </div>
+                            <div class="form-grid two-columns">
+                                <label class="field">
+                                    <span>Preference de remise</span>
+                                    <select name="remise">
+                                        <option value="">Selectionnez</option>
+                                        <option value="showroom">Retrait au showroom</option>
+                                        <option value="livraison-dakar">Livraison a Dakar</option>
+                                        <option value="livraison-personnalisee">Livraison personnalisee</option>
+                                    </select>
+                                </label>
+                                <label class="field">
+                                    <span>Service chauffeur</span>
+                                    <select name="chauffeur">
+                                        <option value="">Selectionnez</option>
+                                        <option value="sans">Sans chauffeur</option>
+                                        <option value="avec">Avec chauffeur</option>
+                                    </select>
+                                </label>
+                                <label class="field full-width">
+                                    <span>Message</span>
+                                    <textarea name="message" rows="6" placeholder="Precisez votre besoin: horaires, destination, chauffeur, livraison, documents..."></textarea>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-section compact-section">
+                            <label class="consent-line">
+                                <input type="checkbox" name="validation" required>
+                                <span>Je confirme vouloir etre contacte par Abdou Automobile pour finaliser cette demande de location.</span>
+                            </label>
+                        </section>
+
+                        <div class="purchase-actions">
+                            <button type="submit">Envoyer ma demande de location</button>
+                            <p>Validation finale sous reserve de disponibilite, des conditions de remise et de la confirmation par un conseiller.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="purchase-card confirmation-card" id="rental-confirmation" hidden>
+                    <h3>Demande enregistree</h3>
+                    <p id="rental-confirmation-message"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

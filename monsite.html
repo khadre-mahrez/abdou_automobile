@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdou Automobile - Location et Vente de Voitures de Luxe</title>
+    <meta name="description" content="Location et vente de véhicules de luxe à Dakar, Sénégal. Range Rover, Mercedes-Benz, BMW, Audi, Bentley, Porsche, Lexus et Maserati.">
+    <link rel="stylesheet" href="abdou.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Overlay Modal -->
+    <div id="modal-overlay" class="overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo-aa.svg" alt="Logo Abdou Auto">
+                <span class="logo-text">
+                    <strong>Abdou Auto</strong>
+                    <small>Solutions Automobiles &amp; Prestige</small>
+                </span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#voitures">Voitures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Voitures de Luxe à Votre Portée</h1>
+            <p>Découvrez notre sélection premium pour achat ou location à Dakar.</p>
+            <div class="hero-buttons">
+                <a href="#voitures" class="btn-primary">Nos Véhicules</a>
+                <a href="#contact" class="btn-secondary">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voitures Section -->
+    <section id="voitures" class="section">
+        <h2>Nos Véhicules Premium</h2>
+        <div class="cars-grid">
+
+            <!-- 1 Range Rover -->
+            <article class="car-card">
+                <h3>Range Rover Sport SV Black</h3>
+                <div class="car-gallery">
+                    <img src="https://media.production.jlrms.com/styles/low_res/s3/2025-07-02/image/6958c1d5-0115-4813-8aae-f2d74291e49d/RRS_SV_BLACK_08_IG_POST_4x5_020725.jpg?VersionId=zhLDOmdXqOr0NzDFfUsBYL15fiej3mTa&itok=2W7OYRnG" alt="Photo reelle d'un Range Rover Sport SV Black" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat1" class="details">
+                    <p><strong>Moteur :</strong> V8 Supercharged</p>
+                    <p><strong>Puissance :</strong> 525 ch</p>
+                    <p><strong>Kilométrage :</strong> 45 000 km</p>
+                    <p><strong>Toit :</strong> Panoramique</p>
+                    <p><strong>Prix :</strong> 75 000 000 FCFA</p>
+                </div>
+                <div id="details-location1" class="details">
+                    <p><strong>24h :</strong> 75 000 FCFA</p>
+                    <p><strong>48h :</strong> 120 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 350 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 2 Mercedes -->
+            <article class="car-card">
+                <h3>Mercedes-Benz E-Class</h3>
+                <div class="car-gallery">
+                    <img src="https://img.sm360.ca/images//article/dilawri-group-of-companies/115462/file/article1686254866854.jpg" alt="Photo reelle d'une Mercedes-Benz E-Class noire" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat2" class="details">
+                    <p><strong>Moteur :</strong> Diesel</p>
+                    <p><strong>Puissance :</strong> 130 ch</p>
+                    <p><strong>Kilométrage :</strong> 65 000 km</p>
+                    <p><strong>Prix :</strong> 80 000 000 FCFA</p>
+                </div>
+                <div id="details-location2" class="details">
+                    <p><strong>24h :</strong> 70 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 200 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 3 BMW -->
+            <article class="car-card">
+                <h3>BMW 5 Series</h3>
+                <div class="car-gallery">
+                    <img src="https://www.secondsonline.co.za/images/1000/vehicles/260226/1189118-1.jpg" alt="Photo reelle d'une BMW 5 Series blanche" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat3" class="details">
+                    <p><strong>Moteur :</strong> Diesel</p>
+                    <p><strong>Puissance :</strong> 150 ch</p>
+                    <p><strong>Kilométrage :</strong> 65 000 km</p>
+                    <p><strong>Prix :</strong> 50 700 000 FCFA</p>
+                </div>
+                <div id="details-location3" class="details">
+                    <p><strong>24h :</strong> 45 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 150 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 4 Audi A8 -->
+            <article class="car-card">
+                <h3>Audi A8</h3>
+                <div class="car-gallery">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Audi_A8_L_D5_IMG_0066.jpg" alt="Photo reelle d'une Audi A8 noire" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat4" class="details">
+                    <p><strong>Moteur :</strong> V6 / V8 premium</p>
+                    <p><strong>Puissance :</strong> 340 ch</p>
+                    <p><strong>Kilométrage :</strong> 18 000 km</p>
+                    <p><strong>Prix :</strong> 68 500 000 FCFA</p>
+                </div>
+                <div id="details-location4" class="details">
+                    <p><strong>24h :</strong> 120 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 650 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 5 Bentley Bentayga -->
+            <article class="car-card">
+                <h3>Bentley Bentayga</h3>
+                <div class="car-gallery">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bentley%20Bentayga.jpg" alt="Photo reelle d'une Bentley Bentayga" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat5" class="details">
+                    <p><strong>Moteur :</strong> V8 Twin-Turbo</p>
+                    <p><strong>Puissance :</strong> 542 ch</p>
+                    <p><strong>Kilométrage :</strong> 9 000 km</p>
+                    <p><strong>Prix :</strong> 185 000 000 FCFA</p>
+                </div>
+                <div id="details-location5" class="details">
+                    <p><strong>24h :</strong> 250 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 1 500 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 6 Porsche Cayenne -->
+            <article class="car-card">
+                <h3>Porsche Cayenne</h3>
+                <div class="car-gallery">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2018%20Porsche%20Cayenne%20front%204.2.18.jpg" alt="Photo reelle plus rapprochee d'une Porsche Cayenne" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat6" class="details">
+                    <p><strong>Moteur :</strong> V6 Turbo</p>
+                    <p><strong>Puissance :</strong> 340 ch</p>
+                    <p><strong>Kilométrage :</strong> 14 000 km</p>
+                    <p><strong>Prix :</strong> 96 000 000 FCFA</p>
+                </div>
+                <div id="details-location6" class="details">
+                    <p><strong>24h :</strong> 175 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 980 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 7 Mercedes G-Class -->
+            <article class="car-card">
+                <h3>Mercedes-Benz G-Class</h3>
+                <div class="car-gallery">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes%20G-Class.jpg" alt="Photo reelle d'une Mercedes-Benz G-Class" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat7" class="details">
+                    <p><strong>Moteur :</strong> V8 Biturbo</p>
+                    <p><strong>Puissance :</strong> 422 ch</p>
+                    <p><strong>Kilométrage :</strong> 11 000 km</p>
+                    <p><strong>Prix :</strong> 155 000 000 FCFA</p>
+                </div>
+                <div id="details-location7" class="details">
+                    <p><strong>24h :</strong> 220 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 1 300 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 8 Lexus LX 600 -->
+            <article class="car-card">
+                <h3>Lexus LX 600</h3>
+                <div class="car-gallery">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lexus%20LX%20600%20%282024%29%20%2853626699099%29.jpg" alt="Photo reelle d'une Lexus LX 600" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat8" class="details">
+                    <p><strong>Moteur :</strong> V6 Biturbo</p>
+                    <p><strong>Puissance :</strong> 409 ch</p>
+                    <p><strong>Kilométrage :</strong> 8 500 km</p>
+                    <p><strong>Prix :</strong> 142 000 000 FCFA</p>
+                </div>
+                <div id="details-location8" class="details">
+                    <p><strong>24h :</strong> 210 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 1 240 000 FCFA</p>
+                </div>
+            </article>
+
+            <!-- 9 Maserati Levante -->
+            <article class="car-card">
+                <h3>Maserati Levante</h3>
+                <div class="car-gallery">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maserati%20Levante.jpg" alt="Photo reelle d'une Maserati Levante" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="goToPurchase(this)">Acheter</button>
+                    <button type="button" onclick="goToRental(this)">Louer</button>
+                </div>
+                <div id="details-achat9" class="details">
+                    <p><strong>Moteur :</strong> V6 Twin-Turbo</p>
+                    <p><strong>Puissance :</strong> 350 ch</p>
+                    <p><strong>Kilométrage :</strong> 16 000 km</p>
+                    <p><strong>Prix :</strong> 88 000 000 FCFA</p>
+                </div>
+                <div id="details-location9" class="details">
+                    <p><strong>24h :</strong> 165 000 FCFA</p>
+                    <p><strong>1 semaine :</strong> 920 000 FCFA</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+        <h2>Contactez-Nous Dès Aujourd'hui</h2>
+        <div class="contact-layout">
+            <div class="contact-panel">
+                <p class="contact-kicker">Service premium a Dakar</p>
+                <h3>Parlons de votre prochain vehicule</h3>
+                <div class="contact-cards">
+                    <article class="info-card">
+                        <span class="info-label">Telephone</span>
+                        <a href="tel:+221775580955" class="info-value">+221 77 558 09 55</a>
+                        <p>Disponible pour achat, location et reservation rapide.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label">Adresse</span>
+                        <p class="info-value">Dakar, Senegal</p>
+                        <p>Accueil sur rendez-vous dans un cadre professionnel.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-label">Horaires</span>
+                        <p class="info-value">Lundi - Samedi, 08h00 - 20h00</p>
+                        <p>Reponse rapide pour les demandes urgentes.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form class="contact-form">
+                    <input type="text" name="nom" placeholder="Votre Nom" required>
+                    <input type="tel" name="telephone" placeholder="Telephone" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="5" placeholder="Votre message (achat/location)..." required></textarea>
+                    <button type="submit">Envoyer le Message</button>
+                </form>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0219680999877!2d-17.44405868466089!3d14.716677989824717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb42bdd3f%2C0x0!2sDakar!5e0!3m2!1sfr!2snl!4v1729855116149!5m2!1sfr!2snl" width="100%" height="300" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abdou Automobile - Tous droits réservés | Dakar, Sénégal | <a href="#contact">Contact</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
