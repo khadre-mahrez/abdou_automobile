@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Monogramme Abdou Auto</title>
+  <desc id="desc">Deux lettres A dans un cercle ouvert sur la droite.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e1a1"/>
+      <stop offset="50%" stop-color="#cfaa57"/>
+      <stop offset="100%" stop-color="#a8752b"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="#121417"/>
+  <path d="M90 20c-39 0-70 31-70 70s31 70 70 70c28 0 48-8 63-26" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <g fill="url(#gold)">
+    <path d="M30 118 58 58h10l28 60H84l-6-13H48l-6 13zm23-23h20L63 73z"/>
+    <path d="M74 118 102 58h10l28 60H128l-6-13H92l-6 13zm23-23h20L107 73z" opacity=".96"/>
+  </g>
+  <path d="M45 88h64" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round"/>
+</svg>
