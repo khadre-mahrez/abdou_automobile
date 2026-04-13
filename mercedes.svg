@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Mercedes berline executive</title>
+  <desc id="desc">Illustration originale d'une berline executive gris argent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d2338"/>
+      <stop offset="100%" stop-color="#295678"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9eef2"/>
+      <stop offset="50%" stop-color="#abb7c5"/>
+      <stop offset="100%" stop-color="#636e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect y="500" width="1200" height="250" fill="#182635"/>
+  <ellipse cx="600" cy="605" rx="330" ry="40" fill="#091018" opacity=".35"/>
+  <path d="M250 492c21-74 66-130 136-168 63-34 154-52 271-52 128 0 224 23 291 69 43 29 74 74 93 135l44 16c20 7 30 18 30 35v34H201v-26c0-21 9-35 28-43z" fill="url(#body)"/>
+  <path d="M408 330h317c82 0 149 34 204 103l15 19H343l20-31c11-18 27-40 45-58 0 0 0 0 0 0z" fill="#7d8a97"/>
+  <path d="M440 345h135l32 92H391l17-34c10-20 20-36 32-58z" fill="#bfe0f2"/>
+  <path d="M603 345h150c46 0 86 17 122 50l42 42H638z" fill="#b7d5eb"/>
+  <circle cx="422" cy="566" r="63" fill="#101112"/>
+  <circle cx="422" cy="566" r="31" fill="#c0c6cf"/>
+  <circle cx="816" cy="566" r="63" fill="#101112"/>
+  <circle cx="816" cy="566" r="31" fill="#c0c6cf"/>
+  <circle cx="612" cy="463" r="25" fill="#d9e0e8"/>
+  <circle cx="612" cy="463" r="3" fill="#1b1f25"/>
+  <path d="M612 444v38M595 454h34M601 474l22-22M601 452l22 22" stroke="#1b1f25" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Ford 4x4 tout terrain</title>
+  <desc id="desc">Illustration originale d'un pickup Ford 4x4 sur piste sableuse.</desc>
+  <defs>
+    <linearGradient id="desert" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ec5db"/>
+      <stop offset="100%" stop-color="#f0c37a"/>
+    </linearGradient>
+    <linearGradient id="truck" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b68731"/>
+      <stop offset="100%" stop-color="#70420f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#desert)"/>
+  <path d="M0 492c138-51 285-77 442-77 279 0 531 81 758 243v92H0z" fill="#b78143"/>
+  <ellipse cx="610" cy="617" rx="352" ry="46" fill="#6c451c" opacity=".35"/>
+  <path d="M237 493c25-71 70-122 133-154 52-26 124-39 218-39h129c46 0 88 16 124 48l66 60h87c34 0 62 24 68 58l10 57H205v-16c0-30 10-49 32-58z" fill="url(#truck)"/>
+  <path d="M418 339h217c42 0 80 15 109 43l44 43H349l22-33c13-20 28-38 47-53z" fill="#6f420f"/>
+  <path d="M445 353h120l40 72H390c16-25 35-49 55-72z" fill="#d3ecf7"/>
+  <path d="M598 353h121c33 0 64 13 90 37l40 35H624z" fill="#bde2f0"/>
+  <rect x="799" y="428" width="90" height="20" rx="10" fill="#3d2b15"/>
+  <rect x="329" y="436" width="36" height="13" rx="6.5" fill="#f9edba"/>
+  <rect x="896" y="445" width="35" height="12" rx="6" fill="#ff7f50"/>
+  <circle cx="416" cy="571" r="71" fill="#171411"/>
+  <circle cx="416" cy="571" r="30" fill="#b5b9bd"/>
+  <circle cx="837" cy="571" r="71" fill="#171411"/>
+  <circle cx="837" cy="571" r="30" fill="#b5b9bd"/>
+</svg>

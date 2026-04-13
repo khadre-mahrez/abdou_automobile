@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Ford Fusion urbaine</title>
+  <desc id="desc">Illustration originale d'une Ford Fusion bleue dans un cadre urbain.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12304d"/>
+      <stop offset="100%" stop-color="#5ba0d0"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c73b8"/>
+      <stop offset="100%" stop-color="#143c66"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <g opacity=".18" fill="#d1ecff">
+    <rect x="115" y="125" width="125" height="220"/>
+    <rect x="270" y="175" width="92" height="170"/>
+    <rect x="810" y="110" width="105" height="235"/>
+    <rect x="942" y="150" width="138" height="195"/>
+  </g>
+  <rect y="500" width="1200" height="250" fill="#182533"/>
+  <ellipse cx="603" cy="605" rx="328" ry="40" fill="#091119" opacity=".34"/>
+  <path d="M253 495c21-73 64-127 130-163 57-31 139-46 245-46 124 0 220 24 291 72 42 29 72 72 93 130l40 15c19 7 28 18 28 33v31H216v-25c0-22 12-38 37-47z" fill="url(#body)"/>
+  <path d="M383 353h349c86 0 153 36 204 107H342c12-31 26-52 41-67z" fill="#1d568d"/>
+  <path d="M431 368h135l36 80H395c8-17 20-33 36-48z" fill="#bbdef5"/>
+  <path d="M599 368h145c49 0 92 18 128 54l34 26H627z" fill="#a9d2ee"/>
+  <path d="M503 454h142" stroke="#9cc3e2" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <circle cx="425" cy="571" r="63" fill="#0f1012"/>
+  <circle cx="425" cy="571" r="30" fill="#b7bec8"/>
+  <circle cx="816" cy="571" r="63" fill="#0f1012"/>
+  <circle cx="816" cy="571" r="30" fill="#b7bec8"/>
+  <rect x="337" y="452" width="37" height="12" rx="6" fill="#f7f4d0"/>
+  <rect x="881" y="454" width="37" height="12" rx="6" fill="#ff6d63"/>
+</svg>
